@@ -8,7 +8,7 @@ var baseChar = {
   M: 1000,
 };
 
-exports.arabicConvert = function (romanNumeral) {
+exports.arabicConvert = (romanNumeral) => {
   var res = 0;
   for (var i = 0; i < romanNumeral.length; i++) {
     var index = baseChar[romanNumeral[i]];
